@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Target
+END
+ReleaseUnittest.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 207
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Target/ReleaseUnittest.xcconfig
+END
+DebugUnittest.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Target/DebugUnittest.xcconfig
+END
+SharedLibrary.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Target/SharedLibrary.xcconfig
+END
+SharedLibraryGCSupported.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 216
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Target/SharedLibraryGCSupported.xcconfig
+END
+StaticLibrary.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Target/StaticLibrary.xcconfig
+END
+StaticLibraryGCSupported.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 216
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Target/StaticLibraryGCSupported.xcconfig
+END
+LoadableBundle.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Target/LoadableBundle.xcconfig
+END
+LoadableBundleGCSupported.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 217
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Target/LoadableBundleGCSupported.xcconfig
+END

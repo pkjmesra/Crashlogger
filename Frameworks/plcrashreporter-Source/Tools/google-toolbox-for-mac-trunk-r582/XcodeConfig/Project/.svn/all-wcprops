@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project
+END
+DebugiPhone313.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 207
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/DebugiPhone313.xcconfig
+END
+ReleaseLeopardOrLater.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 214
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/ReleaseLeopardOrLater.xcconfig
+END
+ReleaseiPhone30.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 208
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/ReleaseiPhone30.xcconfig
+END
+DebugLeopardOrLater.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/DebugLeopardOrLater.xcconfig
+END
+ReleaseiPhone40.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 208
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/ReleaseiPhone40.xcconfig
+END
+ReleaseiPhone31.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 208
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/ReleaseiPhone31.xcconfig
+END
+ReleaseSnowLeopardOrLater.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/ReleaseSnowLeopardOrLater.xcconfig
+END
+ReleaseiPhone41.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 208
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/ReleaseiPhone41.xcconfig
+END
+ReleaseiPhone32.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 208
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/ReleaseiPhone32.xcconfig
+END
+ReleaseiOS.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/ReleaseiOS.xcconfig
+END
+ReleaseMacOSX.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/ReleaseMacOSX.xcconfig
+END
+DebugiPhone30.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/DebugiPhone30.xcconfig
+END
+DebugSnowLeopardOrLater.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 216
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/DebugSnowLeopardOrLater.xcconfig
+END
+DebugiPhone31.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/DebugiPhone31.xcconfig
+END
+DebugiPhone40.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/DebugiPhone40.xcconfig
+END
+DebugiPhone41.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/DebugiPhone41.xcconfig
+END
+DebugiPhone32.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/DebugiPhone32.xcconfig
+END
+DebugiOS.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/DebugiOS.xcconfig
+END
+DebugMacOSX.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/DebugMacOSX.xcconfig
+END
+ReleaseTigerOrLater.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/ReleaseTigerOrLater.xcconfig
+END
+ReleaseiPhone312.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 209
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/ReleaseiPhone312.xcconfig
+END
+DebugTigerOrLater.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 210
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/DebugTigerOrLater.xcconfig
+END
+ReleaseiPhone313.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 209
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/ReleaseiPhone313.xcconfig
+END
+DebugiPhone312.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 207
+/SVN/VZFiOSMobileApps/!svn/ver/1466/Phase2/branches/Sprint5/Source/Frameworks/CrashLogger/Frameworks/plcrashreporter-Source/Tools/google-toolbox-for-mac-trunk-r582/XcodeConfig/Project/DebugiPhone312.xcconfig
+END
