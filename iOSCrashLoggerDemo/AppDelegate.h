@@ -1,11 +1,10 @@
 /*
  Copyright (c) 2011, Research2Development Inc..
  All rights reserved.
- Part of "Open Source" initiative from  Research2Development Inc..
- 
+
  Redistribution and use in source or in binary forms, with or without modification,
  are permitted provided that the following conditions are met:
- 
+
  Redistributions in source or binary form must reproduce the above copyright notice, this
  list of conditions and the following disclaimer in the documentation and/or other
  materials provided with the distribution.
@@ -23,20 +22,22 @@
  OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
  OF THE POSSIBILITY OF SUCH DAMAGE."
  */
-// See http://www.cocoadev.com/index.pl?StackTraces
-/* 1.Xcode's Organizer window: Only works on iPhone crash logs; displays Mac crash logs unchanged
- 2.atos  -o path-to-GrowlHelperApp-executable: Does not resolve the symbol; output: “0x00014223”
- 3.atos  -o path-to-dSYM-executable: Does not resolve the symbol; output: “0x00014223”
- 4.gdb: Requires the main bundle and dSYM bundle to be in the same directory
- This symbolicator is not going to require any dsym file.
-*/
+//
+//  AppDelegate.h
+//  iOSCrashLoggerDemo
+//
+//  Created by Praveen Jha on 08/01/13.
+//
+//
 
-#import <CrashReporter/CrashReporter.h>
+#import <UIKit/UIKit.h>
 
-@interface Symbolicator : NSObject
+@class ViewController;
 
-+ (BOOL) retainSymbolsForStackFrames:(NSArray *)stackFrames inReport:(PLCrashReport *)report;
-+ (void) clearSymbols;
-+ (NSArray *) symbolAndOffsetForInstructionPointer:(uint64_t)instructionPointer;
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) ViewController *viewController;
 
 @end

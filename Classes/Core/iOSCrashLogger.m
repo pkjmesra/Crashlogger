@@ -1,7 +1,7 @@
 /*
- Copyright (c) 2012, GlobalLogic India Private Limited.
+ Copyright (c) 2011, Research2Development Inc..
  All rights reserved.
- Part of "Open Source" initiative from iPhone CoE group of GlobalLogic Nagpur.
+ Part of "Open Source" initiative from  Research2Development Inc..
  
  Redistribution and use in source or in binary forms, with or without modification,
  are permitted provided that the following conditions are met:
@@ -9,7 +9,7 @@
  Redistributions in source or binary form must reproduce the above copyright notice, this
  list of conditions and the following disclaimer in the documentation and/or other
  materials provided with the distribution.
- Neither the name of the GlobalLogic. nor the names of its contributors may be
+ Neither the name of the Research2Development. nor the names of its contributors may be
  used to endorse or promote products derived from this software without specific
  prior written permission.
  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
@@ -25,13 +25,13 @@
  */
 /*
  Usage:
- [[GLCrashLogger sharedCrashManager] setSubmissionURL:[NSString stringWithFormat:@"http://107.20.16.199/aurora/fupload?udid=%@&fname=%@%@",@"CrashLogs",[[UIDevice currentDevice].uniqueIdentifier lowercaseString],@"_crashlog.txt"]];
- [GLCrashLogger sharedCrashManager].autoSubmitDeviceUDID =YES;
- [[GLCrashLogger sharedCrashManager] setLoggingEnabled:NO]; // Not required unless you want to debug (in which case set it to YES.By default NO.)
- [[GLCrashLogger sharedCrashManager] setLogCrashThreadStacks:NO]; // Setting to YES would log all threads' stacktrace. By default NO.
- [[GLCrashLogger sharedCrashManager] setDelegate:self];
- [GLCrashLogger sharedCrashManager].autoSubmitCrashReport =YES;
- [GLCrashLogger sharedCrashManager].showAlwaysButton =YES;
+ [[iOSCrashLogger sharedCrashManager] setSubmissionURL:[NSString stringWithFormat:@"http://107.20.16.199/aurora/fupload?udid=%@&fname=%@%@",@"CrashLogs",[[UIDevice currentDevice].uniqueIdentifier lowercaseString],@"_crashlog.txt"]];
+ [iOSCrashLogger sharedCrashManager].autoSubmitDeviceUDID =YES;
+ [[iOSCrashLogger sharedCrashManager] setLoggingEnabled:NO]; // Not required unless you want to debug (in which case set it to YES.By default NO.)
+ [[iOSCrashLogger sharedCrashManager] setLogCrashThreadStacks:NO]; // Setting to YES would log all threads' stacktrace. By default NO.
+ [[iOSCrashLogger sharedCrashManager] setDelegate:self];
+ [iOSCrashLogger sharedCrashManager].autoSubmitCrashReport =YES;
+ [iOSCrashLogger sharedCrashManager].showAlwaysButton =YES;
  
  */
 
@@ -47,7 +47,7 @@
 #import <UIKit/UIKit.h>
 //#import <CoreLocation/CLLocationManager.h>
 
-#import "GLCrashLogger.h"
+#import "iOSCrashLogger.h"
 #import "LFCGzipUtility.h"
 #import "Symbolicator.h"
 #import "BSReachability.h"
@@ -70,18 +70,18 @@ NSBundle *CrashBundleForApp(void)
 //! A localizer utility routine
 NSString *HSCrashLocalize(NSString *stringToken) 
 {
-  if ([GLCrashLogger sharedCrashManager].languageStyle == nil)
+  if ([iOSCrashLogger sharedCrashManager].languageStyle == nil)
     return NSLocalizedStringFromTableInBundle(stringToken, @"Crash", CrashBundleForApp(), @"");
   else 
   {
     NSString *alternate = [NSString stringWithFormat:@"Crash%@", 
-                           [GLCrashLogger sharedCrashManager].languageStyle];
+                           [iOSCrashLogger sharedCrashManager].languageStyle];
     return NSLocalizedStringFromTableInBundle(stringToken, alternate, CrashBundleForApp(), @"");
   }
 }
 
 
-@interface GLCrashLogger (Private)
+@interface iOSCrashLogger (Private)
 
 //! Starts the crash manager and sends all crash reports (if any)
 - (void)startManager;
@@ -110,7 +110,7 @@ NSString *HSCrashLocalize(NSString *stringToken)
 - (BOOL)hasPendingCrashReport;
 
 //! returns singleton instance of crashmanager
-+ (GLCrashLogger *)sharedCrashManager;
++ (iOSCrashLogger *)sharedCrashManager;
 //! callback for plcrashreporter post-crash
 void post_crash_callback(siginfo_t *info, ucontext_t *uap, void *context);
 //! retains symbols post-crash to report the object names and code-line locations
@@ -120,7 +120,7 @@ void post_crash_callback(siginfo_t *info, ucontext_t *uap, void *context);
 
 @end
 
-@implementation GLCrashLogger
+@implementation iOSCrashLogger
 
 @synthesize delegate = _delegate;
 @synthesize submissionURL = _submissionURL;
@@ -138,13 +138,13 @@ PLCrashReport       *_crashReport;
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 40000
 //! returns singleton instance of crashmanager
-+(GLCrashLogger *)sharedCrashManager
++(iOSCrashLogger *)sharedCrashManager
 {   
-  static GLCrashLogger *sharedInstance = nil;
+  static iOSCrashLogger *sharedInstance = nil;
   static dispatch_once_t pred;
   
   dispatch_once(&pred, ^{
-    sharedInstance = [GLCrashLogger alloc];
+    sharedInstance = [iOSCrashLogger alloc];
     sharedInstance = [sharedInstance init];
   });
   
@@ -153,12 +153,12 @@ PLCrashReport       *_crashReport;
 
 #else
 //! returns singleton instance of crashmanager
-+ (GLCrashLogger *)sharedCrashManager {
-	static GLCrashLogger *CrashManager = nil;
++ (iOSCrashLogger *)sharedCrashManager {
+	static iOSCrashLogger *CrashManager = nil;
 	
 	if (CrashManager == nil) 
     {
-		CrashManager = [[GLCrashLogger alloc] init];
+		CrashManager = [[iOSCrashLogger alloc] init];
 	}
 	
 	return CrashManager;
@@ -333,7 +333,7 @@ PLCrashReport       *_crashReport;
   [self performSelector:@selector(startManager) withObject:nil afterDelay:1.0f];
 }
 
-//! sets the application unique identifier (com.globallogic.aurora etc.)
+//! sets the application unique identifier (com.Research2Development.aurora etc.)
 - (void)setAppIdentifier:(NSString *)anAppIdentifier 
 {    
   if (_appIdentifier != anAppIdentifier) 
@@ -1218,8 +1218,8 @@ didStartElement:(NSString *)elementName
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void post_crash_callback(siginfo_t *info, ucontext_t *uap, void *context) 
 {
-    [[GLCrashLogger sharedCrashManager] performSelectorOnMainThread:@selector(retainSymbolsForReport:) 
-                                             withObject:[[GLCrashLogger sharedCrashManager] crashReport] 
+    [[iOSCrashLogger sharedCrashManager] performSelectorOnMainThread:@selector(retainSymbolsForReport:) 
+                                             withObject:[[iOSCrashLogger sharedCrashManager] crashReport] 
                                           waitUntilDone:YES];
 }
 

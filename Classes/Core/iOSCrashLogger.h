@@ -1,7 +1,6 @@
 /*
- Copyright (c) 2012, GlobalLogic India Private Limited.
+ Copyright (c) 2011, Research2Development Inc..
  All rights reserved.
- Part of "Open Source" initiative from iPhone CoE group of GlobalLogic Nagpur.
  
  Redistribution and use in source or in binary forms, with or without modification,
  are permitted provided that the following conditions are met:
@@ -9,7 +8,7 @@
  Redistributions in source or binary form must reproduce the above copyright notice, this
  list of conditions and the following disclaimer in the documentation and/or other
  materials provided with the distribution.
- Neither the name of the GlobalLogic. nor the names of its contributors may be
+ Neither the name of the Research2Development. nor the names of its contributors may be
  used to endorse or promote products derived from this software without specific
  prior written permission.
  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
@@ -30,7 +29,7 @@
  1. You may have to add crashReporter.framework (PLCrashReporter) into your main application.
  2. Also add libz.dylib as a linked library.
  3. Add the "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/usr/local/include/" into the
-    header search path because GLCrashLogger.h (this file) will be dumped there as a result of
+    header search path because iOSCrashLogger.h (this file) will be dumped there as a result of
     building this static library. Alternatively, you could add this header file separately into your
     main application.
  4. You should also have a JOSNKit that either supports JSONString or JSONRepresentation
@@ -38,18 +37,18 @@
     that into your main application.
  
  Usage:
- [[GLCrashLogger sharedCrashManager] setSubmissionURL:[NSString stringWithFormat:@"http://107.20.16.199/aurora/fupload?udid=%@&fname=%@%@",@"CrashLogs",[[UIDevice currentDevice].uniqueIdentifier lowercaseString],@"_crashlog.txt"]];
- [GLCrashLogger sharedCrashManager].autoSubmitDeviceUDID =YES;
- [[GLCrashLogger sharedCrashManager] setLoggingEnabled:NO]; // Not required unless you want to debug (in which case set it to YES.By default NO.)
- [[GLCrashLogger sharedCrashManager] setLogCrashThreadStacks:NO]; // Setting to YES would log all threads' stacktrace. By default NO.
- [[GLCrashLogger sharedCrashManager] setDelegate:self];
- [GLCrashLogger sharedCrashManager].autoSubmitCrashReport =YES;
- [GLCrashLogger sharedCrashManager].showAlwaysButton =YES;
+ [[iOSCrashLogger sharedCrashManager] setSubmissionURL:[NSString stringWithFormat:@"http://107.20.16.199/aurora/fupload?udid=%@&fname=%@%@",@"CrashLogs",[[UIDevice currentDevice].uniqueIdentifier lowercaseString],@"_crashlog.txt"]];
+ [iOSCrashLogger sharedCrashManager].autoSubmitDeviceUDID =YES;
+ [[iOSCrashLogger sharedCrashManager] setLoggingEnabled:NO]; // Not required unless you want to debug (in which case set it to YES.By default NO.)
+ [[iOSCrashLogger sharedCrashManager] setLogCrashThreadStacks:NO]; // Setting to YES would log all threads' stacktrace. By default NO.
+ [[iOSCrashLogger sharedCrashManager] setDelegate:self];
+ [iOSCrashLogger sharedCrashManager].autoSubmitCrashReport =YES;
+ [iOSCrashLogger sharedCrashManager].showAlwaysButton =YES;
  
  */
 #import <Foundation/Foundation.h>
 
-#define HSCrashLog(fmt, ...) do { if([GLCrashLogger sharedCrashManager].isLoggingEnabled) { NSLog((@"[CrashLib] %s/%d " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__); }} while(0)
+#define HSCrashLog(fmt, ...) do { if([iOSCrashLogger sharedCrashManager].isLoggingEnabled) { NSLog((@"[CrashLib] %s/%d " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__); }} while(0)
 
 #define kCrashBundleName @"Crash.bundle"
 
@@ -137,7 +136,7 @@ typedef enum CrashReportStatus {
 } CrashReportStatus;
 
 //! This protocol is used to send the image updates
-@protocol GLCrashLoggerDelegate <NSObject>
+@protocol iOSCrashLoggerDelegate <NSObject>
 
 @optional
 
@@ -164,11 +163,11 @@ typedef enum CrashReportStatus {
 
 @end
 
-@interface GLCrashLogger : NSObject <NSXMLParserDelegate> 
+@interface iOSCrashLogger : NSObject <NSXMLParserDelegate> 
 {
         NSString *_submissionURL;
 
-        id <GLCrashLoggerDelegate> _delegate;
+        id <iOSCrashLoggerDelegate> _delegate;
 
         BOOL _loggingEnabled;
         BOOL _logCrashThreadStacks;
@@ -206,13 +205,13 @@ typedef enum CrashReportStatus {
         BOOL _sendingInProgress;
 }
 
-+ (GLCrashLogger *)sharedCrashManager;
++ (iOSCrashLogger *)sharedCrashManager;
 
 //! submission URL defines where to send the crash reports to (required)
 @property (nonatomic, retain) NSString *submissionURL;
 
 //! delegate is optional
-@property (nonatomic, assign) id <GLCrashLoggerDelegate> delegate;
+@property (nonatomic, assign) id <iOSCrashLoggerDelegate> delegate;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // settings

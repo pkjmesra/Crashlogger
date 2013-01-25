@@ -1,6 +1,6 @@
 //
 //  main.m
-//  GLCrashLoggerDemo
+//  iOSCrashLoggerDemo
 //
 //  Created by Praveen Jha on 08/01/13.
 //

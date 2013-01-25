@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		847B8237149AF15B005354D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847B8236149AF15B005354D2 /* Foundation.framework */; };
-		847B8255149AF220005354D2 /* GLCrashLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 847B8248149AF220005354D2 /* GLCrashLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		847B8256149AF220005354D2 /* GLCrashLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 847B8249149AF220005354D2 /* GLCrashLogger.m */; };
+		847B8255149AF220005354D2 /* iOSCrashLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 847B8248149AF220005354D2 /* iOSCrashLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		847B8256149AF220005354D2 /* iOSCrashLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 847B8249149AF220005354D2 /* iOSCrashLogger.m */; };
 		847B8257149AF220005354D2 /* Symbolicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 847B824A149AF220005354D2 /* Symbolicator.h */; };
 		847B8258149AF220005354D2 /* Symbolicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 847B824B149AF220005354D2 /* Symbolicator.m */; };
 		847B8259149AF220005354D2 /* LFCGzipUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 847B824D149AF220005354D2 /* LFCGzipUtility.h */; };
@@ -32,7 +32,7 @@
 		E3207A5D169C4325001C0133 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3207A5C169C4325001C0133 /* ViewController.m */; };
 		E3207A60169C4325001C0133 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3207A5E169C4325001C0133 /* ViewController_iPhone.xib */; };
 		E3207A63169C4325001C0133 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3207A61169C4325001C0133 /* ViewController_iPad.xib */; };
-		E3207A88169C4445001C0133 /* libGLCrashLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 847B8233149AF15B005354D2 /* libGLCrashLogger.a */; };
+		E3207A88169C4445001C0133 /* libiOSCrashLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 847B8233149AF15B005354D2 /* libiOSCrashLogger.a */; };
 		E3207A8A169C444E001C0133 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 847B8263149AF2EF005354D2 /* libz.dylib */; };
 		E3207A8F169C46F5001C0133 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849A9F71149B096300444BBC /* CoreFoundation.framework */; };
 		E3207A91169C4737001C0133 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3207A90169C4736001C0133 /* SystemConfiguration.framework */; };
@@ -137,7 +137,7 @@
 			containerPortal = 847B822A149AF15A005354D2 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 847B8232149AF15B005354D2;
-			remoteInfo = GLCrashLogger;
+			remoteInfo = iOSCrashLogger;
 		};
 		E3EA1B18169D5DEF00E827CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -149,11 +149,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		847B8233149AF15B005354D2 /* libGLCrashLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGLCrashLogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		847B8233149AF15B005354D2 /* libiOSCrashLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOSCrashLogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		847B8236149AF15B005354D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		847B823A149AF15B005354D2 /* GLCrashLogger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLCrashLogger-Prefix.pch"; sourceTree = "<group>"; };
-		847B8248149AF220005354D2 /* GLCrashLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCrashLogger.h; sourceTree = "<group>"; };
-		847B8249149AF220005354D2 /* GLCrashLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCrashLogger.m; sourceTree = "<group>"; };
+		847B823A149AF15B005354D2 /* iOSCrashLogger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSCrashLogger-Prefix.pch"; sourceTree = "<group>"; };
+		847B8248149AF220005354D2 /* iOSCrashLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSCrashLogger.h; sourceTree = "<group>"; };
+		847B8249149AF220005354D2 /* iOSCrashLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSCrashLogger.m; sourceTree = "<group>"; };
 		847B824A149AF220005354D2 /* Symbolicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbolicator.h; sourceTree = "<group>"; };
 		847B824B149AF220005354D2 /* Symbolicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Symbolicator.m; sourceTree = "<group>"; };
 		847B824D149AF220005354D2 /* LFCGzipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCGzipUtility.h; sourceTree = "<group>"; };
@@ -165,13 +165,13 @@
 		847B8263149AF2EF005354D2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		849A9F71149B096300444BBC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		E3207928169C344C001C0133 /* CrashReporter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CrashReporter.xcodeproj; path = "Frameworks/plcrashreporter-Source/CrashReporter.xcodeproj"; sourceTree = "<group>"; };
-		E3207A42169C4324001C0133 /* GLCrashLoggerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLCrashLoggerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3207A42169C4324001C0133 /* iOSCrashLoggerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCrashLoggerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3207A44169C4324001C0133 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E3207A47169C4324001C0133 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E3207A4B169C4324001C0133 /* GLCrashLoggerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLCrashLoggerDemo-Info.plist"; sourceTree = "<group>"; };
+		E3207A4B169C4324001C0133 /* iOSCrashLoggerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSCrashLoggerDemo-Info.plist"; sourceTree = "<group>"; };
 		E3207A4D169C4325001C0133 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E3207A4F169C4325001C0133 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E3207A51169C4325001C0133 /* GLCrashLoggerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLCrashLoggerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		E3207A51169C4325001C0133 /* iOSCrashLoggerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSCrashLoggerDemo-Prefix.pch"; sourceTree = "<group>"; };
 		E3207A52169C4325001C0133 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E3207A53169C4325001C0133 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E3207A55169C4325001C0133 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -204,7 +204,7 @@
 				E3207A95169C4782001C0133 /* SystemConfiguration.framework in Frameworks */,
 				E3207A8F169C46F5001C0133 /* CoreFoundation.framework in Frameworks */,
 				E3207A8A169C444E001C0133 /* libz.dylib in Frameworks */,
-				E3207A88169C4445001C0133 /* libGLCrashLogger.a in Frameworks */,
+				E3207A88169C4445001C0133 /* libiOSCrashLogger.a in Frameworks */,
 				E3207A45169C4324001C0133 /* UIKit.framework in Frameworks */,
 				E3207A46169C4324001C0133 /* Foundation.framework in Frameworks */,
 				E3207A48169C4324001C0133 /* CoreGraphics.framework in Frameworks */,
@@ -218,7 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				847B8238149AF15B005354D2 /* CrashLogger */,
-				E3207A49169C4324001C0133 /* GLCrashLoggerDemo */,
+				E3207A49169C4324001C0133 /* iOSCrashLoggerDemo */,
 				847B8235149AF15B005354D2 /* Frameworks */,
 				847B8234149AF15B005354D2 /* Products */,
 			);
@@ -227,8 +227,8 @@
 		847B8234149AF15B005354D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				847B8233149AF15B005354D2 /* libGLCrashLogger.a */,
-				E3207A42169C4324001C0133 /* GLCrashLoggerDemo.app */,
+				847B8233149AF15B005354D2 /* libiOSCrashLogger.a */,
+				E3207A42169C4324001C0133 /* iOSCrashLoggerDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -255,7 +255,7 @@
 		847B8239149AF15B005354D2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				847B823A149AF15B005354D2 /* GLCrashLogger-Prefix.pch */,
+				847B823A149AF15B005354D2 /* iOSCrashLogger-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -274,8 +274,8 @@
 		847B8247149AF220005354D2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				847B8248149AF220005354D2 /* GLCrashLogger.h */,
-				847B8249149AF220005354D2 /* GLCrashLogger.m */,
+				847B8248149AF220005354D2 /* iOSCrashLogger.h */,
+				847B8249149AF220005354D2 /* iOSCrashLogger.m */,
 				847B824A149AF220005354D2 /* Symbolicator.h */,
 				847B824B149AF220005354D2 /* Symbolicator.m */,
 			);
@@ -329,7 +329,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E3207A49169C4324001C0133 /* GLCrashLoggerDemo */ = {
+		E3207A49169C4324001C0133 /* iOSCrashLoggerDemo */ = {
 			isa = PBXGroup;
 			children = (
 				E3207A52169C4325001C0133 /* AppDelegate.h */,
@@ -340,16 +340,16 @@
 				E3207A61169C4325001C0133 /* ViewController_iPad.xib */,
 				E3207A4A169C4324001C0133 /* Supporting Files */,
 			);
-			path = GLCrashLoggerDemo;
+			path = iOSCrashLoggerDemo;
 			sourceTree = "<group>";
 		};
 		E3207A4A169C4324001C0133 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E3207A4B169C4324001C0133 /* GLCrashLoggerDemo-Info.plist */,
+				E3207A4B169C4324001C0133 /* iOSCrashLoggerDemo-Info.plist */,
 				E3207A4C169C4325001C0133 /* InfoPlist.strings */,
 				E3207A4F169C4325001C0133 /* main.m */,
-				E3207A51169C4325001C0133 /* GLCrashLoggerDemo-Prefix.pch */,
+				E3207A51169C4325001C0133 /* iOSCrashLoggerDemo-Prefix.pch */,
 				E3207A55169C4325001C0133 /* Default.png */,
 				E3207A57169C4325001C0133 /* Default@2x.png */,
 				E3207A59169C4325001C0133 /* Default-568h@2x.png */,
@@ -392,7 +392,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847B8255149AF220005354D2 /* GLCrashLogger.h in Headers */,
+				847B8255149AF220005354D2 /* iOSCrashLogger.h in Headers */,
 				847B8257149AF220005354D2 /* Symbolicator.h in Headers */,
 				847B8259149AF220005354D2 /* LFCGzipUtility.h in Headers */,
 				847B825B149AF220005354D2 /* JSONKit.h in Headers */,
@@ -403,9 +403,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		847B8232149AF15B005354D2 /* GLCrashLogger */ = {
+		847B8232149AF15B005354D2 /* iOSCrashLogger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 847B8240149AF15B005354D2 /* Build configuration list for PBXNativeTarget "GLCrashLogger" */;
+			buildConfigurationList = 847B8240149AF15B005354D2 /* Build configuration list for PBXNativeTarget "iOSCrashLogger" */;
 			buildPhases = (
 				847B822F149AF15B005354D2 /* Sources */,
 				847B8230149AF15B005354D2 /* Frameworks */,
@@ -417,14 +417,14 @@
 			dependencies = (
 				E3EA1B19169D5DEF00E827CB /* PBXTargetDependency */,
 			);
-			name = GLCrashLogger;
+			name = iOSCrashLogger;
 			productName = CrashLogger;
-			productReference = 847B8233149AF15B005354D2 /* libGLCrashLogger.a */;
+			productReference = 847B8233149AF15B005354D2 /* libiOSCrashLogger.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		E3207A41169C4324001C0133 /* GLCrashLoggerDemo */ = {
+		E3207A41169C4324001C0133 /* iOSCrashLoggerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E3207A64169C4325001C0133 /* Build configuration list for PBXNativeTarget "GLCrashLoggerDemo" */;
+			buildConfigurationList = E3207A64169C4325001C0133 /* Build configuration list for PBXNativeTarget "iOSCrashLoggerDemo" */;
 			buildPhases = (
 				E3207A3E169C4324001C0133 /* Sources */,
 				E3207A3F169C4324001C0133 /* Frameworks */,
@@ -435,9 +435,9 @@
 			dependencies = (
 				E3EA1B04169D59AA00E827CB /* PBXTargetDependency */,
 			);
-			name = GLCrashLoggerDemo;
-			productName = GLCrashLoggerDemo;
-			productReference = E3207A42169C4324001C0133 /* GLCrashLoggerDemo.app */;
+			name = iOSCrashLoggerDemo;
+			productName = iOSCrashLoggerDemo;
+			productReference = E3207A42169C4324001C0133 /* iOSCrashLoggerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -448,7 +448,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = 847B822D149AF15A005354D2 /* Build configuration list for PBXProject "GLCrashLogger" */;
+			buildConfigurationList = 847B822D149AF15A005354D2 /* Build configuration list for PBXProject "iOSCrashLogger" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -466,8 +466,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				847B8232149AF15B005354D2 /* GLCrashLogger */,
-				E3207A41169C4324001C0133 /* GLCrashLoggerDemo */,
+				847B8232149AF15B005354D2 /* iOSCrashLogger */,
+				E3207A41169C4324001C0133 /* iOSCrashLoggerDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -604,7 +604,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847B8256149AF220005354D2 /* GLCrashLogger.m in Sources */,
+				847B8256149AF220005354D2 /* iOSCrashLogger.m in Sources */,
 				847B8258149AF220005354D2 /* Symbolicator.m in Sources */,
 				847B825A149AF220005354D2 /* LFCGzipUtility.m in Sources */,
 				847B825C149AF220005354D2 /* JSONKit.m in Sources */,
@@ -627,7 +627,7 @@
 /* Begin PBXTargetDependency section */
 		E3EA1B04169D59AA00E827CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 847B8232149AF15B005354D2 /* GLCrashLogger */;
+			target = 847B8232149AF15B005354D2 /* iOSCrashLogger */;
 			targetProxy = E3EA1B03169D59AA00E827CB /* PBXContainerItemProxy */;
 		};
 		E3EA1B19169D5DEF00E827CB /* PBXTargetDependency */ = {
@@ -676,7 +676,7 @@
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CrashLogger/GLCrashLogger-Prefix.pch";
+				GCC_PREFIX_HEADER = "CrashLogger/iOSCrashLogger-Prefix.pch";
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
@@ -684,7 +684,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_NAME = GLCrashLogger;
+				PRODUCT_NAME = iOSCrashLogger;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
@@ -803,7 +803,7 @@
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CrashLogger/GLCrashLogger-Prefix.pch";
+				GCC_PREFIX_HEADER = "CrashLogger/iOSCrashLogger-Prefix.pch";
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
@@ -811,7 +811,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_NAME = GLCrashLogger;
+				PRODUCT_NAME = iOSCrashLogger;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
@@ -831,7 +831,7 @@
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CrashLogger/GLCrashLogger-Prefix.pch";
+				GCC_PREFIX_HEADER = "CrashLogger/iOSCrashLogger-Prefix.pch";
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
@@ -839,7 +839,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_NAME = GLCrashLogger;
+				PRODUCT_NAME = iOSCrashLogger;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
@@ -863,14 +863,14 @@
 					"\"$(SRCROOT)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GLCrashLoggerDemo/GLCrashLoggerDemo-Prefix.pch";
+				GCC_PREFIX_HEADER = "iOSCrashLoggerDemo/iOSCrashLoggerDemo-Prefix.pch";
 				GCC_VERSION = "";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"/**";
-				INFOPLIST_FILE = "GLCrashLoggerDemo/GLCrashLoggerDemo-Info.plist";
+				INFOPLIST_FILE = "iOSCrashLoggerDemo/iOSCrashLoggerDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iOSCrashLoggerDemo;
 				VALID_ARCHS = "armv7 armv7s i386";
 				WRAPPER_EXTENSION = app;
 			};
@@ -891,15 +891,15 @@
 					"\"$(SRCROOT)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GLCrashLoggerDemo/GLCrashLoggerDemo-Prefix.pch";
+				GCC_PREFIX_HEADER = "iOSCrashLoggerDemo/iOSCrashLoggerDemo-Prefix.pch";
 				GCC_VERSION = "";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"/**";
-				INFOPLIST_FILE = "GLCrashLoggerDemo/GLCrashLoggerDemo-Info.plist";
+				INFOPLIST_FILE = "iOSCrashLoggerDemo/iOSCrashLoggerDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iOSCrashLoggerDemo;
 				VALID_ARCHS = "armv7 armv7s i386";
 				WRAPPER_EXTENSION = app;
 			};
@@ -920,15 +920,15 @@
 					"\"$(SRCROOT)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GLCrashLoggerDemo/GLCrashLoggerDemo-Prefix.pch";
+				GCC_PREFIX_HEADER = "iOSCrashLoggerDemo/iOSCrashLoggerDemo-Prefix.pch";
 				GCC_VERSION = "";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"/**";
-				INFOPLIST_FILE = "GLCrashLoggerDemo/GLCrashLoggerDemo-Info.plist";
+				INFOPLIST_FILE = "iOSCrashLoggerDemo/iOSCrashLoggerDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iOSCrashLoggerDemo;
 				VALID_ARCHS = "armv7 armv7s i386";
 				WRAPPER_EXTENSION = app;
 			};
@@ -937,7 +937,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		847B822D149AF15A005354D2 /* Build configuration list for PBXProject "GLCrashLogger" */ = {
+		847B822D149AF15A005354D2 /* Build configuration list for PBXProject "iOSCrashLogger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				847B823E149AF15B005354D2 /* Debug */,
@@ -947,7 +947,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		847B8240149AF15B005354D2 /* Build configuration list for PBXNativeTarget "GLCrashLogger" */ = {
+		847B8240149AF15B005354D2 /* Build configuration list for PBXNativeTarget "iOSCrashLogger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				847B8241149AF15B005354D2 /* Debug */,
@@ -957,7 +957,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E3207A64169C4325001C0133 /* Build configuration list for PBXNativeTarget "GLCrashLoggerDemo" */ = {
+		E3207A64169C4325001C0133 /* Build configuration list for PBXNativeTarget "iOSCrashLoggerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E3207A65169C4325001C0133 /* Debug */,
